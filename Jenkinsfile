@@ -6,5 +6,10 @@ pipeline{
         bat 'echo holamundo'
       }
     }
+    stage("Build"){
+      steps{
+        bat 'echo Building'
+      }
+    }
   }
 }

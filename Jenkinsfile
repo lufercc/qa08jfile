@@ -1,9 +1,12 @@
 pipeline{
   agent any
   stages {
-    stage("hola"){
+    stage("Init"){
       steps{
-        bat 'echo holamundo'
+        bat 'echo hola'
+      }
+      steps{
+        bat 'echo mundo'
       }
     }
     stage("Build"){

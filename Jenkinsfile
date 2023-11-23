@@ -3,7 +3,7 @@ pipeline {
  stages {
     stage("build") {
          steps {
-             bash 'echo building'
+             bat 'echo building'
          }
     }
  }

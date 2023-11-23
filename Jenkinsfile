@@ -1,20 +1,10 @@
-pipeline {
- agent any
- stages {
-    stage("build") {
-         steps {
-             bat 'echo building'
-         }
+pipeline{
+  agent any
+  stages {
+    stage("hola"){
+      steps{
+        bat 'echo holamundo'
+      }
     }
-     stage("test") {
-         steps {
-             bat 'echo Testing'
-         }
-     }
-     stage("deploy") {
-         steps {
-             bat 'echo deploying'
-         }
-     }
- }
+  }
 }
